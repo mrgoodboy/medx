@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>MedX @ Yale</title>
+
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/skel.min.js"></script>
+  <script src="javascripts/skel-layers.min.js"></script>
+  <script src="javascripts/init.js"></script>
+  <noscript>
+  <link rel="stylesheet" href="css/skel.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-xlarge.css" />
+  </noscript>
+</head>
+<body class="landing">
+  <header id="header" class="alt">
+    <h1><strong><a href="index.html">MedX</a></strong> @ Yale</h1>
+    <nav id="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/mission.html">Mission</a></li>
+        <li><a href="/education.html">Education</a></li>
+        <li><a href="/externships.html">Externships</a></li>
+        <li><a href="/policy.html">Policy</a></li>
+        <li><a href="/connect.html">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <script>
+window.smoothScrollTo = (function () {
+  var timer, start, factor;
+  
+  return function (target, duration) {
+    var offset = window.pageYOffset,
+        delta  = target - window.pageYOffset; // Y-offset difference
+    duration = duration || 1000;              // default 1 sec animation
+    start = Date.now();                       // get start time
+    factor = 0;
+    
+    if( timer ) {
+      clearInterval(timer); // stop any running animations
+    }
+    
+    function step() {
+      var y;
+      factor = (Date.now() - start) / duration; // get interpolation factor
+      if( factor >= 1 ) {
+        clearInterval(timer); // stop animation
+        factor = 1;           // clip to max 1.0
+      } 
+      y = factor * delta + offset;
+      window.scrollBy(0, y - window.pageYOffset);
+    }
+    
+    timer = setInterval(step, 10);
+    return timer;
+  };
+}());
+
+</script>
+
+
+<section id="banner">
+	<h2>Welcome to MedX</h2>
+	<p>Yale</p>
+	<ul class="actions">
+		<li><div onclick="smoothScrollTo(580, 530);" class="button special big">Learn More</div></li>
+	</ul>
+</section>
+
+<section id="one" class="wrapper style2">
+	<div class="container 75%">
+		<div class="row 200%">
+			<div class="6u 12u$(medium)">
+				<header class="major">
+					<h2>An alternative pre-med group</h2>
+					<p>explore with us</p>
+				</header>
+			</div>
+			<div class="6u$ 12u$(medium)">
+				<p>The MedX Program seeks to reimagine the undergraduate pre-health experience. We act as a powerful extension of traditional medical science routes, involving students in multi-disciplinary applications of academic work and the realization of service-oriented culture.</p>
+				<p>Standing as an alternative to conventional "pre-med" activities, The Program explores a range of increasingly important issues such as physician influence in technological development and comparative health paradigms in international policy. Our goal is twofold: to involve the clinically-oriented in the intersection of medicine and globalization, and to engage others by mapping diverse experiences to the future of healthcare.</p>
+			</div>
+		</div>
+	</div>
+</section>	
+
+<section id="two" class="wrapper style1 special">
+	<div class="container">
+		<header class="major">
+			<h2>What we do</h2>
+			<p>structure overview</p>
+		</header>
+		<div class="row 400%">
+			<div class="4u 12u$(xsmall)">
+				<div>
+					<h3>Execute</h3>
+					<h5>Develop a 360 degree overview of the current state of global health care, fostering a holistic understanding of medicine</h5>
+					<p class="align-left">MedXamine (Education Division) begins the MedX journey by introducing members to remarkably accomplished speakers, charging students as the "supernodes"  of a cross-generational health data student-led research project, and orienting pre-health students with the role of other disciplines in healthcare. We explore applications of health to companies of all types, programs run by on-campus departments, and graduate schools, in addition to acting as consultants for various healthcare organizations. Finally, students contribute to outreach that furthers the interest of medicine at large and their own individual development.</p>
+				</div>
+				
+			</div>
+
+
+			<div class="4u 12u$(xsmall)">
+				<div class="fit captioned">
+					<h3>Experience</h3>
+					<h5>Enter a semester of cross-linked externships, rediscover health on campus, and travel the world.</h5>
+					<p class="align-left">MedXperience (Externships Division) designs a series of externship experiences designed to give members a snapshot of medicine at work. Whether it is executing on-the-ground work for an international startup, touring a pharmaceuticals company, or assisting a hospital-run medical exchange program halfway across the world, our programs create maximum impact and demand consistent intellectual involvement. Our trips examine healthcare through many lenses, exploring a country's infrastructure and policies as well as medical education and facilities.</p>
+				</div>
+				
+			</div>
+
+			<div class="4u$ 12u$(xsmall)">
+				<div class="">
+					<h3>Execute</h3>
+					<h5>User our voice to drive change in healthcare policy and contribute to a new health paradigm.</h5>
+					<p class="align-left">MedXecute (Policy Division) directly involves student members in a variety of medical and health policy efforts ranging from research to advocacy. Currently, we:</p>
+					<ul class="align-left">
+						<li>
+						Work with an international organization to support responsible neglected disease research </p>
+						</li>
+						<li>
+						Work with an international health startup to conduct policy research in the United States and abroad</p>
+						</li>
+						<li>
+						Collaborate with NextGEN Policy to promote science policy advocacy</p>
+						</li>
+						<li>
+						Work with administration to develop and implement solutions to issues with pre-medical culture</p>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+		</div>
+		
+	
+	<div class="row 50%">
+		<div class="4u align-center"><a href="/education.html" class="button special small">Learn more</a></div>
+		<div class="4u"><a href="/externships.html" class="button special small">Learn more</a></div>
+		<div class="4u$"><a href="/policy.html" class="button special small">Learn more</a></div>
+	</div>
+	</div>
+</section>
+  
+
+  <footer id="footer">
+    <div class="container">
+      <ul class="icons">
+        <li><a href="#" class="icon fa-facebook"></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>Code: <a href="mailto:minhtri@pham.cz">Minh Tri Pham</a></li>
+        <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+        <li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
