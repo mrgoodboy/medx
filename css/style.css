@@ -978,6 +978,7 @@
 						color: #666;
 						display: inline-block;
 						text-decoration: none;
+						font-size: 0.9em;
 					}
 
 						#header nav > ul > li a:hover {
